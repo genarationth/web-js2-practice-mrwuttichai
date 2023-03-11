@@ -13,21 +13,21 @@ Work in pairs to complete the following table:
 
 | Value to be converted | number() | String() | Boolean() |
 |-----------------------|----------|----------|-----------|
-| false                 |          |          |           |
-| true                  |          |          |           |
-| 0                     |          |          |           |
-| 1                     |          |          |           |
-| “0”                   |          |          |           |
-| “000”                 |          |          |           |
-| “1”                   |          |          |           |
-| NaN                   |          |          |           |
-| Infinity              |          |          |           |
-| -Infinity             |          |          |           |
-| “”                    |          |          |           |
-| “20”                  |          |          |           |
-| “Twenty”              |          |          |           |
-| null                  |          |          |           |
-| undefinited           |          |          |           |
+| false                 |    0     | 'false'  |    false  |
+| true                  |    1     | 'true'   |    true   |
+| 0                     |    0     |  '0'     |    false  |
+| 1                     |    1     |  '1'     |    true   |
+| “0”                   |    0     |  '0'     |    true   |
+| “000”                 |    0     |  '000'   |    true   |
+| “1”                   |    1     |  '1'     |    true   |
+| NaN                   |    NaN   |  'NaN'   |    false  |
+| Infinity              | Infinity |'Infinity'|    true   |
+| -Infinity             |-Infinity |'-Infinity'|   true   |
+| “”                    |    0     |  ''      |    false  |
+| “20”                  |    20    |  '20'    |    true   |
+| “Twenty”              |    NaN   | 'Twenty' |    true   |
+| null                  |    0     | 'null'   |    false  |
+| undefinited           |   undefinited is not defined    |
 
 
 ## Part 2:  New contender
@@ -41,6 +41,13 @@ Store a future year in another variable. <br>
 Calculate your possible ages for the future year and display it in the console. <br>
 Example: If you were born in 1988, then in 2026 you’ll be 37 or 38 (depending on the month in 2026).
 
+คำตอบ
+let BirthYear =1994;
+let FutureYear =2054;
+//let text; 
+//text = "If you were born in 1994, then in 2054 you'll be " + (FutureYear-BirthYear)
+
+console.log(`If you were born in 1994, then in 2054 you'll be ${FutureYear - BirthYear}`);
 
 
 ### Challenge 2: Create an information card
@@ -49,4 +56,11 @@ Create a card holding 3 pieces of information about a person, such as Name, Loca
 Each piece of information should be a variable.<br>
 Display the card with the information in the correct place.<br>
 Example: “Hi, my name is John. I live in South Africa and enjoy drinking homemade wine.”<br>
+
+คำตอบ
+let Name ="Tay";
+let Location ="the north of Nan";
+let Hobby ="play games";
+
+console.log(`Hi,my name is ${Name}. I live in ${Location} and when I have free time I like to ${Hobby}`);
 
